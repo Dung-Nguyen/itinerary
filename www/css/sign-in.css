@@ -1,0 +1,64 @@
+.bg-singin {
+    background: url(../img/bg/bg.login.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.bg-singin .logo {
+    text-align: center;
+    padding: 55px 0px;
+}
+
+.bg-singin img {
+    width: 200px;
+}
+
+.form-signin .list {
+    margin-bottom: 0px;
+    width: 265px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-signin label.item {
+    border: 0px;
+    background-color: transparent;
+    padding: 0px;
+    margin-bottom: 30px;
+}
+
+.form-signin label.item input[type="text"],
+.form-signin label.item input[type="password"] {
+    border-bottom: 1px solid #ededeb;
+    padding: 0px;
+    font-size: 18px;
+    font-weight: normal;
+    color: #2d3750;
+}
+
+.form-signin label.item input[type="text"]::-webkit-input-placeholder,
+.form-signin label.item input[type="password"]::-webkit-input-placeholder {
+    color: #2d3750 !important;
+}
+
+.form-signin .btn-signin {
+    background-color: #ff6d42;
+    color: #fff;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.form-signin .btn-signin.active,
+.form-signin .btn-signin.activated {
+    background-color: #f4683f !important;
+    border-color: #ff6d42 !important;
+    color: #fff;
+}
+
+.form-signin .lost-password {
+    color: #2d3750;
+    font-size: 18px;
+    font-weight: normal;
+}

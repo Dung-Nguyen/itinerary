@@ -1,0 +1,149 @@
+.home-container {
+    top: 0px;
+}
+
+.home-container img {
+    width: 100%;
+}
+
+.itinerary-viewall {
+    background-color: #f6f6f6;
+    border: 0px;
+    margin-top: -6px;
+    padding: 12px;
+}
+
+.itinerary-viewall span {
+    padding-top: 4px;
+    float: left;
+    margin-top: 4px;
+    color: #363c43;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.itinerary-viewall a {
+    color: #525252 !important;
+    font-size: 16px;
+    float: right;
+    margin-top: 4px;
+}
+
+.item-tinerri:first-child {
+    border-top: 0px;
+}
+
+.item-tinerri {
+    border-color: #f6f6f6;
+}
+
+.item-tinerri a.item-content {
+    padding-right: 15px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.tinerri-day {
+    float: left;
+}
+
+.tinerri-day img {
+    position: absolute;
+    width: 46px;
+    margin-left: 7px;
+    padding-top: 6px;
+}
+
+a.item-content .tinerri-day span {
+    top: 36px;
+}
+
+.tinerri-day span {
+    position: absolute;
+    top: 36px;
+    left: 37px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.tinerri-content {
+    height: 60px;
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 76px;
+}
+
+.tinerri-content p {
+    font-size: 16px;
+    margin-bottom: 0px;
+    color: #5e5e5e;
+}
+
+.tinerri-day span {
+    color: #5e5e5e;
+}
+
+.tinerri-day span.active {
+    color: #ff784d !important;
+}
+
+.content-icon {
+    margin-top: 20px;
+}
+
+.icons-gallery {
+    margin: : 0 auto;
+    vertical-align: text-bottom;
+}
+
+.icons-gallery li {
+    display: inline-block;
+    width: 32.3333%;
+    text-align: center;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.icons-gallery li a {
+    text-decoration: none;
+    color: #676b70;
+}
+
+.icons-gallery img {
+    width: 36px;
+}
+
+.icons-gallery img.message {
+    width: 42px;
+}
+
+.icons-gallery img.hotels {
+    width: 46px;
+}
+
+.icons-gallery img.gallery {
+    width: 42px;
+    margin-bottom: 2px;
+}
+
+.platform-android .icon-badge {
+    right: 22px;
+}
+
+.icon-badge {
+    position: absolute;
+    font-size: 20px;
+    top: -12px;
+    right: 22px;
+    padding: 8px 10px;
+    border-radius: 30px;
+    font-weight: normal !important;
+    background-color: #54575b;
+    color: #fff;
+}
+
+.itinerary-content .list{
+    margin-top: -6px;
+}

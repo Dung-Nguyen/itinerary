@@ -1,0 +1,49 @@
+<ion-view>
+    <ion-header-bar class="header-bar-0">
+        <h1 class="title has-btn-back">
+            <button ui-sref="tab.itine" class="button back-button buttons button-clear btn-back">
+                <i class="icon ion-ios-arrow-left"></i>
+                <span class="back-text back-text-cus" style="transform: translate3d(0px, 0px, 0px);"></span>
+            </button>
+        </h1>
+    </ion-header-bar>
+    <ion-content class="home-container">
+        <div class="img-has-text">
+            <img src="img/bg/photo.Home.png" />
+            <ul class="itinerary-tabs">
+                <li ng-repeat="itine in itineraries" ng-if="(itine.id -1) <= itinerary.id && itinerary.id <= (itine.id +1)" ng-class="{'selected': itine.id === itinerary.id}">
+                    <a href="#/tab/itine/{{itine.id}}">
+                        <p>Day</p>
+                        <p>{{itine.day}}</p>
+                    </a>
+                </li>
+            </ul>
+            <div class="row title-itinerary-img">
+                <div class="col">
+                    <p class="font-300">{{itinerary.date}}</p>
+                    <p class="font400">{{itinerary.location}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="row tabs-itinerary-detail">
+            <div class="col">
+                <ul>
+                    <li><a ui-sref=".surveies">Survey</a></li>
+                    <li><a>Maps</a></li>
+                    <li><a>Share</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="itinery-detail-content">
+                    <p>Itinerary in detail</p>
+                    <p>{{itinerary.content}}</p>
+                    <p>
+                        <img src="{{itinerary.linkImg}}" />
+                    </p>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,92 @@
+<ion-view>
+    <ion-header-bar align-title="left" class="cus-header">
+        <h1 class="title">Home</h1>
+        <div class="buttons more-vertical">
+            <button class="button button-icon button-clear ion-android-more-vertical" id="menu-popover" ng-click="popover.show($event)"></button>
+        </div>
+    </ion-header-bar>
+    <ion-content class="home-container">
+        <div class="img-has-text">
+            <img src="img/bg/photo.Home.png" />
+            <div class="row title-itinerary-img">
+                <div class="col">
+                    <p class="font-300">Mr & Mrs David McComb</p>
+                    <p class="font-bold">VIETNAM HONEYMOON</p>
+                    <p class="font-300">01-05 May 2016</p>
+                </div>
+            </div>
+        </div>
+        <div class="item itinerary-viewall">
+            <span>Itinerary</span>
+            <a ui-sref="tab.itine" class="button button-small button-clear">View all</a>
+        </div>
+        <ion-list>
+            <ion-item class="item-tinerri item-text-wrap" ng-repeat="itinerary in itineraries | limitTo: 3" href="#/tab/itine/{{itinerary.id}}">
+                <div class="tinerri-day">
+
+                    <div ng-show="itinerary.active == 1">
+                        <img src="img/icon/icon.day.png" />
+                        <span class="active">{{itinerary.day}}</span>
+                    </div>
+                    <div ng-show="itinerary.active == 0">
+                        <img src="img/icon/icon.day.gray.png" />
+                        <span>{{itinerary.day}}</span>
+                    </div>
+
+                </div>
+                <div class="tinerri-content">
+                    <p>{{itinerary.date}}</p>
+                    <p class="font-700 {{itinerary.active}}">{{itinerary.location}}</p>
+                </div>
+            </ion-item>
+        </ion-list>
+
+        <div class="content-icon">
+            <div class="row">
+                <div class="col">
+                    <ul class="icons-gallery">
+                        <li>
+                            <a href="#"><img src="img/icon/icon.Contact.png">
+                                <p class="gray">Contacts</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="message" src="img/icon/icon.Messages.png">
+                                <span class="badge white icon-badge">4</span>
+                                <p class="gray">Messages</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="hotels" src="img/icon/icon.hotel.png">
+                                <p class="gray">Hotels</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="gallery" src="img/icon/icon.Gallery.png">
+                                <p class="gray">Map</p>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="icons-gallery">
+                                <a href="#">
+                                    <img class="gallery" src="img/icon/icon.Gallery.png">
+                                    <p class="gray">Gallery</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icons-gallery">
+                                <a href="#">
+                                    <img src="img/icon/icon.Documents.png">
+                                    <p class="gray">Documents</p>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

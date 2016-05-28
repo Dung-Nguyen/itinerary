@@ -1,0 +1,260 @@
+/* Empty. Add your own CSS if you like */
+
+
+/*------------------------------------------
+--- Structure Style ------------------------------
+--- * Custome cores
+--- * Custome tabs
+--- * Platform Android
+--- * Platform Ios (none)
+--- * Core Styles
+--------------------------------------------*/
+
+@import url("sign-in.css");
+@import url("welcome.css");
+@import url("home.css");
+@import url("itinerary-detail.css");
+body {
+    font-family: 'Catamaran', sans-serif !important;
+    font-size: 16px;
+}
+
+.bar.bar-header,
+.cus-header {
+    height: 60px;
+}
+
+.header-bar-0 {
+    width: 0px;
+}
+
+.cus-header .buttons .button {
+    color: #fff;
+}
+
+.cus-header .buttons .ion-android-more-vertical {
+    margin-right: 8px;
+}
+
+.bar {
+    border-color: transparent;
+}
+
+.bar.bar-header {
+    background: transparent;
+    border-bottom-width: 0;
+}
+
+.bar .title {
+    height: 60px;
+    padding: 5px;
+    padding-left: 0px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    left: 15px !important;
+    line-height: 52px;
+    font-family: 'Catamaran', sans-serif !important;
+}
+
+.has-btn-back {
+    top: 5px !important;
+}
+
+.btn-back {
+    color: #fff !important;
+    line-height: 36px !important;
+}
+
+.btn-back i {
+    margin-right: 15px;
+}
+
+.bar .back-button i:before {
+    font-size: 28px;
+}
+
+.btn-back span {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.bar .more-vertical {
+    padding-top: 3px;
+}
+
+
+/*------------------------------------------
+--- Custom Tabs ----------------------------
+--------------------------------------------*/
+
+.tabs .tab-item .icon {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    bottom: 0px;
+    height: 50%;
+    position: relative;
+    margin-top: 6px !important;
+    background-size: contain;
+}
+
+.tabs .tab-item {
+    font-size: 16px !important;
+}
+
+.tabs .tab-item span {
+    font-family: 'Catamaran', sans-serif !important;
+    font-weight: 600;
+    color: #a6a6a6;
+}
+
+.tab-item-active span {
+    color: #e66a45 !important;
+}
+
+.tabs .tab-item .icon.calendar-active {
+    background-image: url('../img/icon/icon-tabs/active/icon.Calendar.png');
+}
+
+.tabs .tab-item .icon.calendar {
+    background-image: url('../img/icon/icon-tabs/inactive/icon.Calendar.png');
+}
+
+.tabs .tab-item .icon.contact-active {
+    background-image: url('../img/icon/icon-tabs/active/icon.contact.png');
+}
+
+.tabs .tab-item .icon.contact {
+    background-image: url('../img/icon/icon-tabs/inactive/icon.contact.png');
+}
+
+.tabs .tab-item .icon.itinerary-active {
+    background-image: url('../img/icon/icon-tabs/active/icon.itinerary.png');
+}
+
+.tabs .tab-item .icon.itinerary {
+    background-image: url('../img/icon/icon-tabs/inactive/icon.itinerary.png');
+}
+
+.tabs .tab-item .icon.message-active {
+    background-image: url('../img/icon/icon-tabs/active/icon.Messages.png');
+}
+
+.tabs .tab-item .icon.message {
+    background-image: url('../img/icon/icon-tabs/inactive/icon.Messages.png');
+}
+
+.tabs .tab-item .icon.document-active {
+    background-image: url('../img/icon/icon-tabs/active/icon.Docs.png');
+}
+
+.tabs .tab-item .icon.document {
+    background-image: url('../img/icon/icon-tabs/inactive/icon.Docs.png');
+}
+
+.tabs-striped .tab-item.tab-item-active,
+.tabs-striped .tab-item.active,
+.tabs-striped .tab-item.activated {
+    border-top: 0px !important;
+}
+
+
+/*------------------------------------------
+--- Platform Android ----------------------------
+--------------------------------------------*/
+
+.platform-android .bar.bar-header {
+    background: transparent;
+    border-bottom-width: 0;
+}
+
+.platform-android .bar .title {
+    line-height: 52px;
+    font-family: 'Catamaran', sans-serif !important;
+}
+
+.platform-android .btn-back {
+    line-height: 36px;
+}
+
+.platform-android .bar .back-button .icon:before {
+    font-size: 28px !important;
+    line-height: 34px !important;
+}
+
+
+/*------------------------------------------
+--- Platform Ios ----------------------------
+--------------------------------------------*/
+
+.platform-ios .bar.bar-header {
+    background: transparent;
+    border-bottom-width: 0;
+}
+
+.platform-ios .btn-back {
+    line-height: 36px;
+}
+
+.platform-ios .bar .back-button .icon:before {
+    font-size: 28px !important;
+    line-height: 34px !important;
+}
+
+
+/*------------------------------------------
+--- Core Styles ----------------------------
+--------------------------------------------*/
+
+input,
+button,
+select,
+textarea {
+    font-family: 'Catamaran', sans-serif;
+}
+
+.font-300 {
+    font-weight: 300;
+}
+
+.font400 {
+    font-weight: 400;
+}
+
+.font-500 {
+    font-weight: 500;
+}
+
+.font-600 {
+    font-weight: 600;
+}
+
+.font-700 {
+    font-weight: 700;
+}
+.font-bold{ font-weight: bold;}
+
+.scroll {
+    height: 100%;
+}
+
+.img-has-text{
+    position: relative;
+}
+
+.title-itinerary-img {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+}
+
+.title-itinerary-img p {
+    color: #fff;
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+
+.title-itinerary-img p {
+    margin-top: 3px;
+}

@@ -1,0 +1,46 @@
+<ion-view>
+    <ion-header-bar align-title="left" class="cus-header">
+        <h1 class="title has-btn-back">
+            <button ui-sref="home" class="button back-button buttons button-clear btn-back">
+                <i class="icon ion-ios-arrow-left"></i>
+                <span class="back-text back-text-cus" style="transform: translate3d(0px, 0px, 0px);">Itinerary</span>
+            </button>
+        </h1>
+        <!--
+        <div class="buttons more-vertical">
+            <button class="button button-icon button-clear ion-android-more-vertical" id="menu-popover" ng-click="popover.show($event)"></button>
+        </div>
+-->
+    </ion-header-bar>
+    <ion-content class="home-container">
+        <div class="img-has-text">
+            <img src="img/bg/bg-itinerary.png" />
+            <div class="row title-itinerary-img">
+                <div class="col">
+                    <p>Mr & Mrs David McComb</p>
+                    <p>VIETNAM HONEYMOON</p>
+                    <p>01-05 May 2016</p>
+                </div>
+            </div>
+        </div>
+        <ion-list class="itinerary-content">
+            <ion-item class="item-tinerri item-text-wrap" ng-repeat="itinerary in itineraries" href="#/tab/itine/{{itinerary.id}}">
+                <div class="tinerri-day">
+                    <div ng-show="itinerary.active == 1">
+                        <img src="img/icon/icon.day.png" />
+                        <span class="active">{{itinerary.day}}</span>
+                    </div>
+                    <div ng-show="itinerary.active == 0">
+                        <img src="img/icon/icon.day.gray.png" />
+                        <span>{{itinerary.day}}</span>
+                    </div>
+
+                </div>
+                <div class="tinerri-content">
+                    <p>{{itinerary.date}}</p>
+                    <p class="font-700 {{itinerary.active}}">{{itinerary.location}}</p>
+                </div>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,84 @@
+.itinerary-tabs {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+}
+
+.itinerary-tabs li {
+    display: inline-block;
+    padding: 10px 12px;
+    height: 40px;
+}
+
+.itinerary-tabs li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.itinerary-tabs li a p {
+    margin: 0px;
+    line-height: 22px;
+    opacity: 0.5;
+    font-size: 16px;
+}
+
+.itinerary-tabs li.selected p {
+    opacity: 1;
+}
+
+.itinerary-tabs li.selected p:last-child {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 4px;
+    font-size: 18px;
+}
+
+.tabs-itinerary-detail {
+    vertical-align: middle;
+    padding-top: 12px !important;
+    padding-bottom: 12px;
+    background-color: #ff774e;
+    margin-top: -6px;
+}
+
+.tabs-itinerary-detail ul li {
+    display: inline-block;
+    text-align: center;
+    width: 32.3333%;
+}
+
+.tabs-itinerary-detail ul li a {
+    color: #fff;
+    font-size: 18px;
+}
+
+.title-iti-detail {
+    padding-left: 22px;
+    bottom: 0px;
+    position: absolute;
+}
+
+.title-iti-detail p {
+    margin-bottom: 0px;
+}
+
+.itinery-detail-content {
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.itinery-detail-content p:first-child {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.itinery-detail-content p {
+    font-size: 17px;
+    line-height: 28px;
+    font-family: 'Catamaran', sans-serif !important;
+}
+
+.itinery-detail-content p img {
+    width: 100%;
+}

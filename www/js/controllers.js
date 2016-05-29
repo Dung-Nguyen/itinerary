@@ -16,12 +16,12 @@ myApp.controller('SigninCtrl', function ($scope, SigninService, $ionicPopup, $st
     }
 });
 
-// Get Itinerary list
+// Itinerary list controller
 myApp.controller('ItineraryCtrl', function ($scope, Itineraries) {
     $scope.itineraries = Itineraries.all();
 });
 
-// 
+// Itrinerary detail controller
 myApp.controller('ItineraryDetailCtrl', function ($scope, $stateParams, Itineraries, $state) {
     $scope.itineraries = Itineraries.all();
     $scope.itinerary = Itineraries.get($stateParams.itineraryId);
@@ -30,4 +30,11 @@ myApp.controller('ItineraryDetailCtrl', function ($scope, $stateParams, Itinerar
     $scope.setSelected = function (idSelectedVote) {
         $scope.idSelectedVote = idSelectedVote;
     };
+
+    $scope.getScrollPosition = function ($ionicScrollDelegate) {
+        // process scroll here
+    }
 })
+
+// Survey controller
+myApp.controller('SurveyCtrl', function($scope){});

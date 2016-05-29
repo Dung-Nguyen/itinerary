@@ -5,12 +5,7 @@
                 <i class="icon ion-ios-arrow-left"></i>
                 <span class="back-text back-text-cus" style="transform: translate3d(0px, 0px, 0px);"></span>
             </button>
-        </h1>
-    </ion-header-bar>
-    <ion-content class="home-container">
-        <div class="img-has-text">
-            <img src="img/bg/photo.Home.png" />
-            <ul class="itinerary-tabs">
+              <ul class="itinerary-tabs">
                 <li ng-repeat="itine in itineraries" ng-if="(itine.id -1) <= itinerary.id && itinerary.id <= (itine.id +1)" ng-class="{'selected': itine.id === itinerary.id}">
                     <a href="#/tab/itine/{{itine.id}}">
                         <p>Day</p>
@@ -18,6 +13,12 @@
                     </a>
                 </li>
             </ul>
+        </h1>
+    </ion-header-bar>
+    <ion-content class="home-container" on-scroll="getScrollPosition()">
+        <div class="img-has-text">
+            <img src="img/bg/photo.Home.png" />
+          
             <div class="row title-itinerary-img">
                 <div class="col">
                     <p class="font-300">{{itinerary.date}}</p>

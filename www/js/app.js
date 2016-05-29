@@ -67,6 +67,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
                         controller: 'ItineraryDetailCtrl'
                     }
                 }
+            })
+            .state('tab.itine-detail.surveies', {
+                url: '/surveies',
+                views: {
+                    'tab-itine@tab': {
+                        templateUrl: 'templates/survey.html',
+                        controller: 'SurveyCtrl'
+                    }
+                }
             });
 
         // if none of the above states are matched, use this as the fallback
@@ -78,7 +87,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
         $ionicConfigProvider.views.maxCache(5);
 
         // note that you can also chain configs
-//        $ionicConfigProvider.backButton.text('');
+        //        $ionicConfigProvider.backButton.text('');
 
         $ionicConfigProvider.tabs.position('bottom');
     })

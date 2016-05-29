@@ -3,6 +3,7 @@
     text-align: center;
     position: absolute;
     top: 0px;
+    left: -15px;
 }
 
 .itinerary-tabs li {
@@ -35,8 +36,6 @@
 
 .tabs-itinerary-detail {
     vertical-align: middle;
-    padding-top: 12px !important;
-    padding-bottom: 12px;
     background-color: #ff774e;
     margin-top: -6px;
 }
@@ -45,11 +44,13 @@
     display: inline-block;
     text-align: center;
     width: 32.3333%;
+    padding: 12px 0px;
 }
 
 .tabs-itinerary-detail ul li a {
     color: #fff;
     font-size: 18px;
+    text-decoration: none;
 }
 
 .title-iti-detail {

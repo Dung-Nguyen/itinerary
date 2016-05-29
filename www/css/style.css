@@ -24,10 +24,6 @@ body {
     height: 60px;
 }
 
-.header-bar-0 {
-    width: 0px;
-}
-
 .cus-header .buttons .button {
     color: #fff;
 }
@@ -201,6 +197,10 @@ body {
     font-size: 28px !important;
     line-height: 34px !important;
 }
+.platform-ios .home-container{
+    top: 0px;
+}
+
 
 
 /*------------------------------------------

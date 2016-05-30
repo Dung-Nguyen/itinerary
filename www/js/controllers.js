@@ -37,4 +37,18 @@ myApp.controller('ItineraryDetailCtrl', function ($scope, $stateParams, Itinerar
 })
 
 // Survey controller
-myApp.controller('SurveyCtrl', function($scope){});
+myApp.controller('SurveyCtrl', function ($scope) {});
+
+// Maps controller
+myApp.controller('MapCtrl', function ($scope, $controller, $rootScope) {
+    var mapServiceCtrl = $rootScope.$new();
+    $controller('MapsServiceCtrl', {
+        $scope: mapServiceCtrl
+    });
+
+    $scope.getMap = function (originCity, destinationCity) {
+        console.log(originCity);
+        console.log(destinationCity);
+        mapServiceCtrl.init(originCity, destinationCity);
+    }
+});

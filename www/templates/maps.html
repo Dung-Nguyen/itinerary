@@ -1,0 +1,25 @@
+<ion-view ng-controller="ItineraryDetailCtrl">
+    <ion-header-bar class="bg-mid-orange" ng-init="getMap(itinerary.startPoint, itinerary.destination)">
+        <h1 class="title has-btn-back">
+            <button ng-click="$ionicGoBack()" class="button back-button buttons button-clear btn-back">
+                <i class="icon ion-ios-arrow-left"></i>
+                <span class="back-text back-text-cus" style="transform: translate3d(0px, 0px, 0px);">Maps</span>
+            </button>
+        </h1>
+    </ion-header-bar>
+    <ion-content class="top-60" ng-controller="MapCtrl">
+        <div id="map" data-tap-disabled="true"></div>
+        <div class="row maps-detail">
+            <ion-item class="item-text-wrap">
+                <div class="item-day">
+                    <p class="font-400">DAY</p>
+                    <p class="font-500">{{itinerary.day}}</p>
+                </div>
+                <div class="item-detail">
+                    <p class="font-400 gray">{{itinerary.date}}</p>
+                    <p class="font-500">{{itinerary.location}}</p>
+                </div>
+            </ion-item>
+        </div>
+    </ion-content>
+</ion-view>

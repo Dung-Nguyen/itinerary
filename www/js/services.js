@@ -36,6 +36,8 @@ myApp.factory('Itineraries', function () {
             linkImg: 'img/upload/Photo.day2.png',
             date: '02 MAY 2016',
             location: 'Arrive Ha Noi - Ho Hoan Kiem - Ho Chi Minh Mausoleum - The Opera House',
+            startPoint:'21.027764,105.834160',
+            destination: '22.766206,104.938885',
             active: '1'
             },
         {
@@ -45,6 +47,8 @@ myApp.factory('Itineraries', function () {
             linkImg: 'img/upload/Photo.day2.png',
             date: '03 MAY 2016',
             location: 'Ha Noi - Lao Cai - Ham Rong Mountain',
+            startPoint:'21.027764,105.834160',
+            destination: '22.766206,104.938885',
             active: '0'
         },
         {
@@ -54,6 +58,8 @@ myApp.factory('Itineraries', function () {
             linkImg: 'img/upload/Photo.day2.png',
             date: '04 MAY 2016',
             location: 'Lao Cai - Sapa - Lao Chai - Ta Van',
+            startPoint:'21.027764,105.834160',
+            destination: '22.766206,104.938885',
             active: '0'
                           },
         {
@@ -63,6 +69,8 @@ myApp.factory('Itineraries', function () {
             linkImg: 'img/upload/Photo.day2.png',
             date: '05 MAY 2016',
             location: 'Ha Giang - Tay Bac',
+            startPoint:'21.027764,105.834160',
+            destination: '22.766206,104.938885',
             active: '0'
                           },
         {
@@ -71,7 +79,9 @@ myApp.factory('Itineraries', function () {
             content: 'Pick-up from Lao cai train station. Get on the bus to continue to #SaPa. After breakfast, take a short walk from Sapa to the Black H’mong village of Y Linh Ho and #Lao Chai where you can see panoramas of the larger valley, paddy terraced fields and the H’mong village.',
             linkImg: 'img/upload/Photo.day2.png',
             date: '06 MAY 2016',
-            location: 'Lao Ca - Sapa - Lao Chai - Ta Van',
+            location: 'Lao Cai - Sapa - Lao Chai - Ta Van',
+            startPoint:'21.027764,105.834160',
+            destination: '22.766206,104.938885',
             active: '0'
                           }];
 

@@ -14,6 +14,7 @@
 @import url("welcome.css");
 @import url("home.css");
 @import url("itinerary-detail.css");
+@import url("maps.css");
 body {
     font-family: 'Catamaran', sans-serif !important;
     font-size: 16px;
@@ -39,6 +40,10 @@ body {
 .bar.bar-header {
     background: transparent;
     border-bottom-width: 0;
+}
+
+.bg-mid-orange {
+    background-color: #e66a45 !important;
 }
 
 .bar .title {
@@ -71,9 +76,10 @@ body {
 }
 
 .btn-back span {
-    font-size: 22px;
+    font-size: 18px;
     text-transform: uppercase;
     font-weight: normal;
+    line-height: 38px;
 }
 
 .bar .more-vertical {
@@ -85,11 +91,17 @@ body {
 --- Custom Tabs ----------------------------
 --------------------------------------------*/
 
+.tabs {
+    height: 60px;
+    border-top: 1px solid #f6f6f6;
+    box-shadow: 0px 1px 2px #f6f6f6;
+}
+
 .tabs .tab-item .icon {
     background-repeat: no-repeat;
     background-position: 50%;
     bottom: 0px;
-    height: 50%;
+    height: 48%;
     position: relative;
     margin-top: 6px !important;
     background-size: contain;
@@ -97,12 +109,14 @@ body {
 
 .tabs .tab-item {
     font-size: 16px !important;
+    line-height: 22px !important;
 }
 
 .tabs .tab-item span {
     font-family: 'Catamaran', sans-serif !important;
-    font-weight: 600;
+    font-weight: 400;
     color: #a6a6a6;
+    font-size: 16px;
 }
 
 .tab-item-active span {
@@ -194,13 +208,13 @@ body {
 }
 
 .platform-ios .bar .back-button .icon:before {
-    font-size: 28px !important;
-    line-height: 34px !important;
-}
-.platform-ios .home-container{
-    top: 0px;
+    font-size: 24px !important;
+    line-height: 38px !important;
 }
 
+.platform-ios .home-container {
+    top: 0px;
+}
 
 
 /*------------------------------------------
@@ -233,13 +247,24 @@ textarea {
 .font-700 {
     font-weight: 700;
 }
-.font-bold{ font-weight: bold;}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.gray {
+    color: #a6a6a6 !important;
+}
 
 .scroll {
     height: 100%;
 }
 
-.img-has-text{
+.top-60 {
+    top: 60px;
+}
+
+.img-has-text {
     position: relative;
 }
 
@@ -247,6 +272,7 @@ textarea {
     position: absolute;
     bottom: 10px;
     left: 15px;
+    width: 92%;
 }
 
 .title-itinerary-img p {
@@ -257,4 +283,33 @@ textarea {
 
 .title-itinerary-img p {
     margin-top: 3px;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+#map {
+    height: 100%;
+}
+
+#floating-panel {
+    position: absolute;
+    top: 10px;
+    left: 25%;
+    z-index: 5;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #999;
+    text-align: center;
+    font-family: 'Roboto', 'sans-serif';
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+#warnings-panel {
+    width: 100%;
+    height: 10%;
+    text-align: center;
 }

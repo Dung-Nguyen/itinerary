@@ -1,0 +1,31 @@
+.maps-detail {
+    position: absolute;
+    bottom: 0px;
+    padding: 0px;
+    padding-bottom: 10px;
+    line-height: 24px;
+}
+
+.maps-detail .item {
+    width: 100%;
+    border: 0px;
+}
+
+.maps-detail .item p {
+    color: #e66a45;
+    font-size: 16px;
+}
+
+.maps-detail .item-day {
+    float: left;
+    padding: 0px 15px 0px 10px;
+    text-align: center;
+}
+
+.maps-detail .item-day p:last-child {
+    font-size: 20px;
+}
+.maps-detail .item-detail p:last-child{
+    margin-left: 50px;
+    font-size: 18px;
+}

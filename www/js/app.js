@@ -68,12 +68,21 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
                     }
                 }
             })
-            .state('tab.itine-detail.surveies', {
-                url: '/surveies',
+//            .state('tab.itine-detail.surveies', {
+//                url: '/surveies',
+//                views: {
+//                    'tab-itine@tab': {
+//                        templateUrl: 'templates/survey.html',
+//                        controller: 'SurveyCtrl'
+//                    }
+//                }
+//            })
+            .state('tab.itine-detail.maps', {
+                url: '/itine/:itineraryId',
                 views: {
                     'tab-itine@tab': {
-                        templateUrl: 'templates/survey.html',
-                        controller: 'SurveyCtrl'
+                        templateUrl: 'templates/maps.html',
+                        controller: 'MapCtrl'
                     }
                 }
             });
